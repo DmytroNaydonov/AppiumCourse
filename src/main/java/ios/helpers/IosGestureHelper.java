@@ -1,7 +1,6 @@
 package ios.helpers;
 
 import com.google.common.collect.ImmutableMap;
-import ios.enums.ScrollDirection;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

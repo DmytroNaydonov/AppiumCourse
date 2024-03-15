@@ -1,13 +1,9 @@
 package ios;
 
-import com.google.common.collect.ImmutableMap;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.Test;
 
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.iOSClassChain;
-import static ios.enums.ScrollDirection.DOWN;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class iosGestureTest extends BaseIosTest {
