@@ -2,13 +2,13 @@ package android;
 
 import org.testng.annotations.Test;
 
-import static enums.SwipeDirection.*;
+import static android.enums.SwipeDirection.LEFT;
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
-public class GestureTest extends BaseTest {
+public class GestureTest extends BaseAndroidTest {
 
     @Test
     public void longPressTest() {

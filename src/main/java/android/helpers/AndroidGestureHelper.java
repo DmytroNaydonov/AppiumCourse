@@ -1,7 +1,7 @@
-package helpers;
+package android.helpers;
 
 import com.google.common.collect.ImmutableMap;
-import enums.SwipeDirection;
+import android.enums.SwipeDirection;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,11 +9,11 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 import static io.appium.java_client.AppiumBy.androidUIAutomator;
 
-public class GestureHelper {
+public class AndroidGestureHelper {
 
     private final WebDriver driver;
 
-    public GestureHelper(WebDriver driver) {
+    public AndroidGestureHelper(WebDriver driver) {
         this.driver = driver;
     }
 

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
-public class HybridTest extends BaseTest {
+public class HybridTest extends BaseAndroidTest {
 
     @Test
     public void browserTest() {

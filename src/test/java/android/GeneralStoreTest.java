@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
-public class GeneralStoreTest extends BaseTest {
+public class GeneralStoreTest extends BaseAndroidTest {
 
     @Test
     public void fillForm() {

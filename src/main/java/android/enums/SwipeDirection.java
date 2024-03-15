@@ -1,4 +1,4 @@
-package enums;
+package android.enums;
 
 public enum SwipeDirection {
 

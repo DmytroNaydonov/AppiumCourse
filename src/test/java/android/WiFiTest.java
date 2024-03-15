@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static io.appium.java_client.AppiumBy.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WiFiTest extends BaseTest {
+public class WiFiTest extends BaseAndroidTest {
 
     @Test
     public void wifiTest() {

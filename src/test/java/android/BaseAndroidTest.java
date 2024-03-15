@@ -1,7 +1,7 @@
 package android;
 
 import com.google.common.collect.ImmutableMap;
-import helpers.GestureHelper;
+import android.helpers.AndroidGestureHelper;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -21,7 +21,7 @@ import java.time.Duration;
 import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
-public class BaseTest {
+public abstract class BaseAndroidTest {
 
     private static final String DEVICE_NAME = "DmytroPhone";
     private final static String URL = "127.0.0.1";
@@ -29,17 +29,17 @@ public class BaseTest {
     private AppiumDriverLocalService service;
     protected final AndroidDriver driver;
     protected final WebDriverWait wait;
-    protected GestureHelper gestureHelper;
+    protected AndroidGestureHelper gestureHelper;
 
     @SneakyThrows
-    public BaseTest() {
+    public BaseAndroidTest() {
         var options = new UiAutomator2Options();
         options.setDeviceName(DEVICE_NAME);
         var appPath = Paths.get("C:", "Users", "dmytro.naydonov", "IdeaProjects", "AppiumCourse", "src", "test", "resources", "General-Store.apk").toString();
         options.setApp(appPath);
         //options.setCapability("browserName", "Chrome"); //FOR BROWSER TESTING
         driver = new AndroidDriver(new URI("http://%s:%s".formatted(URL, PORT)).toURL(), options);
-        gestureHelper = new GestureHelper(driver);
+        gestureHelper = new AndroidGestureHelper(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
